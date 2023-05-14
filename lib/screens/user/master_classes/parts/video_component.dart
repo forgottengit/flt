@@ -28,7 +28,7 @@ class _VideoScreenState extends State<VideoScreen> {
     _betterPlayerController = BetterPlayerController(
         const BetterPlayerConfiguration(
           aspectRatio: 16 / 9,
-          fullScreenByDefault: false,
+          fullScreenByDefault: true,
           autoPlay: true,
           autoDispose: true
         ),
@@ -44,37 +44,39 @@ class _VideoScreenState extends State<VideoScreen> {
         Get.back();
         return true;
       },
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: SizedBox(
-          width: double.infinity,
-          height: double.infinity,
-          child: Stack(
-            children: [
-              Center(
-                child: AspectRatio(
-                  aspectRatio: 16 / 9,
-                  child: BetterPlayer(
-                    controller: _betterPlayerController!,
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          body: SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: Stack(
+              children: [
+                Center(
+                  child: AspectRatio(
+                    aspectRatio: 16 / 9,
+                    child: BetterPlayer(
+                      controller: _betterPlayerController!,
+                    ),
                   ),
                 ),
-              ),
-              Positioned(
-                top: 10.h,
-                left: 10.w,
-                child: InkWell(
-                  onTap: () {
-                    _betterPlayerController!.dispose(forceDispose: true);
-                    Get.back();
-                  },
-                  child: Icon(
-                    Icons.close,
-                    size: 35.h,
-                    color: Colors.white,
+                Positioned(
+                  top: 10.h,
+                  left: 10.w,
+                  child: InkWell(
+                    onTap: () {
+                      _betterPlayerController!.dispose(forceDispose: true);
+                      Get.back();
+                    },
+                    child: Icon(
+                      Icons.close,
+                      size: 35.h,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           ),
         ),
       ),

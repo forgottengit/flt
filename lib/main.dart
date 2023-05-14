@@ -16,10 +16,6 @@ import 'utils/langs/translations.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
   await Firebase.initializeApp();
   await GetStorage.init();
   StorageBinding().dependencies();

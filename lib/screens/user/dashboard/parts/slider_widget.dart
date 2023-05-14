@@ -13,20 +13,23 @@ class SliderWidget extends StatelessWidget {
       builder: (controller) => CarouselSlider(
         items: List.generate(
           controller.sliderList.length,
-          (index) => Center(
-            child: Opacity(
-              opacity: controller.sliderImage.value.id ==
-                      controller.sliderList.elementAt(index).id
-                  ? 1
-                  : .7,
-              child: DrawLayout(
-                imgPath: controller.sliderList.elementAt(index).image,
-                height: controller.sliderList.elementAt(index).size!.height,
-                width: controller.sliderList.elementAt(index).size!.width,
-                marginTop: 22,
-                marginBottom: 6,
+          (index) => GestureDetector(
+            child: Center(
+              child: Opacity(
+                opacity: controller.sliderImage.value.id ==
+                        controller.sliderList.elementAt(index).id
+                    ? 1
+                    : .7,
+                child: DrawLayout(
+                  imgPath: controller.sliderList.elementAt(index).image,
+                  height: controller.sliderList.elementAt(index).size!.height,
+                  width: controller.sliderList.elementAt(index).size!.width,
+                  marginTop: 22,
+                  marginBottom: 6,
+                ),
               ),
             ),
+            onTap: () => controller.onTap(),
           ),
         ),
         carouselController: controller.buttonCarouselController,

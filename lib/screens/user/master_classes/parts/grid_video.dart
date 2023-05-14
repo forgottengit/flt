@@ -16,7 +16,6 @@ class GridVideo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("my width: " + MediaQuery.of(context).size.width.toString());
     return ResponsiveGridList(
       scroll: false,
       desiredItemWidth: (MediaQuery.of(context).size.width <= 480) ? 180.w : 80.w,

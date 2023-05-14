@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'dart:math' as math;
 import 'package:get/get.dart';
 import 'package:happy_nation/components/custom_avatar.dart';
 import 'package:happy_nation/components/custom_text.dart';
 import 'package:happy_nation/constants/assets/icon_assets.dart';
-import 'package:happy_nation/constants/colors.dart';
-import 'package:happy_nation/constants/texts_en.dart';
 import 'package:happy_nation/controllers/dashboard_controller.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -23,21 +21,35 @@ class CustomAppBar extends StatelessWidget {
       init: DashboardController(),
       builder: (controller) => ListTile(
         contentPadding: padding,
-        leading: GestureDetector(
+        leading: (withTrailing) ? GestureDetector(
           onTap: onTap,
-          child: CustomAvatar(
-            height: 44,
-            width: 44,
-            image: controller.userController.currentUser.image,
-            hasMedia: controller.userController.currentUser.hasMedia!,
+          child: Transform(
+            alignment: Alignment.center,
+            transform: Matrix4.rotationY(math.pi),
+            child: SvgPicture.asset(IconAssets.menu),
           ),
-        ),
-        title: CustomText(
-          color: Colors.white,
-          fontSize: 20,
-          text: controller.userController.currentUser.name!.capitalize!,
-          textAlign: TextAlign.left,
-          fontWeight: FontWeight.w700,
+        ) : null,
+        title: Padding(
+          padding: const EdgeInsets.only(top: 12.0),
+          child: Row(
+            mainAxisAlignment: (withTrailing) ? MainAxisAlignment.end : MainAxisAlignment.start,
+            children: [
+              CustomAvatar(
+                height: 44,
+                width: 44,
+                image: controller.userController.currentUser.image,
+                hasMedia: controller.userController.currentUser.hasMedia!,
+              ),
+              SizedBox(width: 8),
+              CustomText(
+                color: Colors.white,
+                fontSize: 20,
+                text: controller.userController.currentUser.name!.capitalize!,
+                textAlign: TextAlign.left,
+                fontWeight: FontWeight.w700,
+              ),
+            ],
+          ),
         ),
         // subtitle: CustomText(
         //   color: vodkaColor,

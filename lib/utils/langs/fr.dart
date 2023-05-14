@@ -119,6 +119,6 @@ Map<String, String> fr = {
   "happyMoodText":
       "Bravo vous êtes de bonne humeur aujourd’hui 😊 \nProfitez-en pour garder cette bonne humeur toute la semaine \nRépandez votre positivité autours de vous\nFaites des compliments à une personne que vous appréciez \nListez les objectifs que vous voulez atteindre cette année 2023 ",
   "Terms of uses": "Conditions d'utilisation",
-  'Private Notice': "Avis privé",
+  'Private Notice': "Politique de confidentialité",
   "Back": "Retour"
 };
