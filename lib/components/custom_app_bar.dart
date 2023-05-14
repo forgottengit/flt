@@ -31,8 +31,26 @@ class CustomAppBar extends StatelessWidget {
         ) : null,
         title: Padding(
           padding: const EdgeInsets.only(top: 12.0),
-          child: Row(
-            mainAxisAlignment: (withTrailing) ? MainAxisAlignment.end : MainAxisAlignment.start,
+          child: (withTrailing) ? Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              CustomText(
+                color: Colors.white,
+                fontSize: 20,
+                text: controller.userController.currentUser.name!.capitalize!,
+                textAlign: TextAlign.left,
+                fontWeight: FontWeight.w700,
+              ),
+              SizedBox(width: 8),
+              CustomAvatar(
+                height: 44,
+                width: 44,
+                image: controller.userController.currentUser.image,
+                hasMedia: controller.userController.currentUser.hasMedia!,
+              ),
+            ],
+          ) : Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               CustomAvatar(
                 height: 44,

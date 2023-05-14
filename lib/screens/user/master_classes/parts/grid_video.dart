@@ -23,13 +23,19 @@ class GridVideo extends StatelessWidget {
       children: List.generate(
         videos.length,
         (index) => InkWell(
-          onTap: () => Get.dialog(
-            VideoScreen(
-              routeArgument: RouteArgument(
-                param: videos.elementAt(index).video,
+          onTap: () {
+            SystemChrome.setPreferredOrientations([
+              DeviceOrientation.landscapeLeft,
+              DeviceOrientation.landscapeRight,
+            ]);
+            Get.dialog(
+              VideoScreen(
+                routeArgument: RouteArgument(
+                  param: videos.elementAt(index).video,
+                ),
               ),
-            ),
-          ),
+            );
+          },
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,

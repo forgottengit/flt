@@ -40,6 +40,10 @@ class _VideoScreenState extends State<VideoScreen> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+        SystemChrome.setPreferredOrientations([
+          DeviceOrientation.portraitUp,
+          DeviceOrientation.portraitDown,
+        ]);
         _betterPlayerController!.dispose(forceDispose: true);
         Get.back();
         return true;
@@ -65,6 +69,10 @@ class _VideoScreenState extends State<VideoScreen> {
                   left: 10.w,
                   child: InkWell(
                     onTap: () {
+                      SystemChrome.setPreferredOrientations([
+                        DeviceOrientation.portraitUp,
+                        DeviceOrientation.portraitDown,
+                      ]);
                       _betterPlayerController!.dispose(forceDispose: true);
                       Get.back();
                     },
