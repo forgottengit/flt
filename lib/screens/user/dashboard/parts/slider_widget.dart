@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:happy_nation/controllers/dashboard_controller.dart';
 import 'package:happy_nation/layouts/draw.dart';
@@ -20,21 +21,26 @@ class SliderWidget extends StatelessWidget {
                   ? 1
                   : .7,
               child: GestureDetector(
-                child: DrawLayout(
-                  imgPath: controller.sliderList.elementAt(index).image,
-                  height: controller.sliderList.elementAt(index).size!.height,
-                  width: controller.sliderList.elementAt(index).size!.width,
-                  marginTop: 22,
-                  marginBottom: 6,
+                child: SvgPicture.asset(
+                  controller.sliderList.elementAt(index).image!,
+                  fit: BoxFit.contain,
                 ),
                 onTap: () => controller.onTap(),
-              ),
+              )
+              /*DrawLayout(
+                imgPath: controller.sliderList.elementAt(index).image,
+                height: controller.sliderList.elementAt(index).size!.height,
+                width: controller.sliderList.elementAt(index).size!.width,
+                marginTop: 22,
+                marginBottom: 6,
+                onTap: () => controller.onTap(),
+              )*/,
             ),
           ),
         ),
         carouselController: controller.buttonCarouselController,
         options: CarouselOptions(
-          enlargeCenterPage: true,
+          enlargeCenterPage: false,
           viewportFraction: .33,
           aspectRatio: 1,
           onPageChanged: (index, change) => controller.onPageChanged(index),

@@ -8,6 +8,7 @@ class DrawLayout extends StatelessWidget {
   final double? width;
   final double? marginTop;
   final double? marginBottom;
+  final GestureTapCallback? onTap;
   const DrawLayout({
     Key? key,
     this.imgPath,
@@ -15,10 +16,13 @@ class DrawLayout extends StatelessWidget {
     this.width,
     this.marginTop,
     this.marginBottom = 0,
+    this.onTap
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    print("height: " + height!.r.toString());
+    print("width: " + width!.r.toString());
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       margin: EdgeInsets.only(
@@ -28,9 +32,12 @@ class DrawLayout extends StatelessWidget {
       ),
       width: width!.r,
       height: height!.r,
-      child: SvgPicture.asset(
-        imgPath!,
-        fit: BoxFit.contain,
+      child: GestureDetector(
+        child: SvgPicture.asset(
+          imgPath!,
+          fit: BoxFit.contain,
+        ),
+        onTap: onTap,
       ),
     );
   }
