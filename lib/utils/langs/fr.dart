@@ -2,14 +2,14 @@ Map<String, String> fr = {
   "Morning,": "Bonjour,",
   "Erreur": "Erreur",
   "Create the space for teams, & boost them with a happy mood":
-      "Créez un espace pour les équipes et stimulez-les avec une humeur joyeuse",
+      "Stimulez votre cerveau avec la science du bonheur",
   "Simple, funny, and quick,": "Simple, drôle et rapide,",
   "Discover our Quiz to be the best of yourself":
-      "Découvrez notre Quiz pour devenir le meilleur de vous-même",
+      "Faites le Quiz et mesurez la maturité de votre bonheur au travail",
   "Login": "Se connecter",
   "Create a new account": "Créer un nouveau compte",
   "Hello,": "Bonjour,",
-  "We want to know you more": "Nous voulons en savoir plus sur vous",
+  "We want to know you more": "Nous voulons vous connaitre plus",
   "Full Name": "Nom complet",
   "Username": "Nom d'utilisateur",
   "Email address": "Email",
@@ -18,7 +18,7 @@ Map<String, String> fr = {
   "Password": "Mot de passe",
   "Confirm your password": "Confirmez votre mot de passe",
   "Profile": "Profile",
-  "Initialization Complete": "Initialization Complete",
+  "Initialization Complete": "Initialisation terminée",
   "I have a Premium access code": "Je dispose d’un code d’accès Premium",
   "Sign up": "S'inscrire",
   "Age": "Age",
@@ -27,8 +27,8 @@ Map<String, String> fr = {
   "Function": "Fonction",
   "Employee": "Employé",
   "Manager": "Manager",
-  "Delete your account": "Effacer votre compte",
-  "do you want to delete ?": "Est-ce-que tu veut effacer ?",
+  "Delete your account": "Supprimer votre compte",
+  "do you want to delete ?": "Voulez vous supprimer?",
   "Male": "Homme",
   "Female": "Femme",
   "Already have an account?": "Vous avez déjà un compte ?",
@@ -47,11 +47,10 @@ Map<String, String> fr = {
   "Email or Mobile number": "Email ou numéro de téléphone",
   "Forgot password?": "Mot de passe oublié ?",
   "Knowledge is power keep on cultivating happiness":
-      "Le savoir est un pouvoir, continuez à cultiver le bonheur",
-  "You made it, your quiz is complete.":
-      "Vous avez réussi, votre quiz est terminé.",
+      "Le savoir est un pouvoir, continuez à apprendre comment cultiver le bonheur",
+  "You made it, your quiz is complete.": "Bravo , Vous avez répondu au quiz.",
   "Check your Report and Masterclasses":
-      "Vérifiez votre rapport et vos masterclasses",
+      "Lisez votre rapport personnalisé et commencez écouter nos masters class",
   "Your report is loading": "Votre rapport est en cours de chargement",
   "you can start using the application after Sign up":
       "Vous pouvez commencer à utiliser l'application après vous être inscrit.",
@@ -65,23 +64,23 @@ Map<String, String> fr = {
   "you can now access all Quiz":
       "vous pouvez maintenant accéder à tous les quiz",
   "Ready to boost your happiness ? here we are.":
-      "Prêt à booster votre bonheur ? Nous y sommes.",
-  "Start Your Quiz": "Commencez votre Quiz",
+      "Prêt à booster votre bonheur ?",
+  "Start Your Quiz": "Commencez votre test de bonheur",
   "Message": "Message",
   "Your password and confirmation password do not match":
-      "Votre mot de passe et votre mot de passe de confirmation ne correspondent pas.",
+      "Vos mots de passe ne correspondent pas.",
   "The given data was invalid. !":
       "Les données fournies ne sont pas valides. !",
   "Please select the answer !": "Veuillez sélectionner la réponse !",
   "I am illimited": "Je suis illimité",
   "I am powerful": "Je suis reconnaissant(e)",
   "I am Grateful": "Je choisis le bonheur",
-  "I am focused on solutions": "Je suis concentré sur les solutions",
+  "I am focused on solutions": "Je suis orienté sur les solutions",
   "I choose happiness": "Je choisis le bonheur",
   "Settings": "Paramètres",
   "Languages": "Langues",
-  "French": "French",
-  "English": "English",
+  "French": "Français",
+  "English": "Anglais",
   "not found": "Pas trouvé",
   "Choose your language": "Choisissez votre langue",
   "Logout": "Déconnexion",
@@ -109,15 +108,15 @@ Map<String, String> fr = {
   "View Your Report": "Afficher votre rapport",
   "Watch Masterclasses": "Regardez les masterclass",
   "You have already passed the Quiz,stay tuned for a new one, see you soon":
-      "Vous avez déjà passé le Quiz, vous pouvez le repasser quand vous le souhaitez, à bientôt",
+      "Vous avez déjà passé le Quiz, vous pouvez le repasser la semaine prochaine",
   "Browse and select from the happy  tools ":
       "Parcourez et sélectionnez ces outils positifs ",
   "badMoodText":
-      "C’est normal si tu n’es pas de bonne humeur\nMais saches que tu peux choisir à être optimiste quoi qu’il arrive \nIl y a des solutions à tout, pratiques les affirmations positives sur Happynation App \nRessource-toi en marchant en plein nature Foret, Mer ou juste à côté de chez toi /travail \nAccepte tes vulnérabilités c’est humain \nRien n’est fixe tout est temporaire ",
+      "C’est normal si tu n’es pas de bonne humeur\nMais saches  ce sont juste des émotions et vous pouvez les changer en une seconde \nIl y a des solutions à tout, pratiques les affirmations positives sur Happynation App \nen répétant les affirmations positives sur Happynation boost  App/ecoutant notre happy playlist  \nRessourcez-vous en marchant en plein nature Foret, Mer ou juste à côté de chez vous‚ \nrien n’est fixe tout est temporaire",
   "neutralMoodText":
-      "Rien ne te motive aujourd’hui alors nous avons pour toi des astuces pratiques \nListes 3 choses dont tu es reconnaissant en pleine conscience \nRegarde des podcasts positifs dans notre vidéothèque\nÉcoutes tas musique préférée\nMarches au moins 30 minutes tu te sentiras mieux ",
+      "Pas de bonnne humeur ne n’est pas grave, et c’est humain . Voici   des astuces pratiques pour vous booster \nListez 3 choses dont vous êtes reconnaissant\nPratiquez la pleine conscience dans tout ce que vous faites\nRegardez des podcasts positifs dans notre vidéothèque\nEcoutez notre playlist booster \nMarchez au moins 30 minutes.",
   "happyMoodText":
-      "Bravo vous êtes de bonne humeur aujourd’hui 😊 \nProfitez-en pour garder cette bonne humeur toute la semaine \nRépandez votre positivité autours de vous\nFaites des compliments à une personne que vous appréciez \nListez les objectifs que vous voulez atteindre cette année 2023 ",
+      "Bravo vous êtes de bonne humeur aujourd’hui 😊 \nProfitez-en pour garder cette bonne humeur toute la semaine \nRépandez votre positivité autours de vous\nFaites des compliments à une personne que vous appréciez \nListez les objectifs que vous voulez atteindre cette semaine \nCréez et innover notez toutes les idées et les tâcheçs à accomplir et passez à l'action.",
   "Terms of uses": "Conditions d'utilisation",
   'Private Notice': "Confidentialité",
   "Back": "Retour"

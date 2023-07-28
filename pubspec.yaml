@@ -44,7 +44,7 @@ dependencies:
   get: ^4.5.1
   get_storage: ^2.0.3
   animations: ^2.0.2
-  intl: ^0.17.0
+  intl: ^0.18.0
   flutter_easyloading: ^3.0.3
   image_picker: ^0.8.4+10
   permission_handler: ^10.2.0
