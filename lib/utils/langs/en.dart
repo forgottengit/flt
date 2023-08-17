@@ -1,15 +1,15 @@
 Map<String, String> en = {
-  "Morning,": "Morning,",
-  "Erreur": "Erreur",
+  "Morning,": "Top of the Morning,",
+  "Erreur": "Error",
   "Create the space for teams, & boost them with a happy mood":
-      "Increase your happiness and build a positive mindset",
-  "Simple, funny, and quick,": "Simple and quick,",
+      "Congratulation on taking the first step towards a happier and fufilling Life",
+  "Simple, funny, and quick,": "Simple, funny and quick,",
   "Discover our Quiz to be the best of yourself":
-      "Try our Happiness quiz and measure the maturity of your happiness",
+      "Take our Happiness quiz and measure the maturity of your happiness",
   "Login": "Login",
   "Create a new account": "Create a new account",
   "Hello,": "Hello,",
-  "We want to know you more": "We want to know you more",
+  "We want to know you more": "We would love to know you more",
   "Full Name": "Full Name",
   "Username": "Username",
   "Email address": "Email address",
@@ -35,8 +35,8 @@ Map<String, String> en = {
   "Already have an account?": "Already have an account?",
   "Sign in": "Sign in",
   "Scrolle Left Or Right To Navigate": "Scroll Left Or Right To Navigate",
-  "Please Login to your account": "Please Login to your account",
-  "Please complete all required fields": "Please complete all required fields",
+  "Please Login to your account": "Login to your account",
+  "Please complete all required fields": "Complete all required fields",
   "Insert code sent to your email": "Insert code sent to your email",
   "Code": "Code",
   "Send": "Send",
@@ -47,22 +47,22 @@ Map<String, String> en = {
   "Email or Mobile number": "Email or Mobile number",
   "Forgot password?": "Forgot password?",
   "Knowledge is power keep on cultivating happiness":
-      "Knowledge is power keep on cultivating happiness",
-  "You made it, your quiz is complete.": "You made it, your quiz is complete.",
-  "Check your Report and Masterclasses": "Check your Report and Masterclasses",
-  "Your report is loading": "Your report is loading",
+      "Unleash the power of your mind and shape it as your positive ally",
+  "You made it, your quiz is complete.": "You made it, your personalized quiz is complete.",
+  "Check your Report and Masterclasses": "Check your Report and your matching Masterclass",
+  "Your report is loading": "Your report is loading, breathe and smile",
   "you can start using the application after Sign up":
-      "you can start using the application after Sign up",
+      "you can start using the happy application after Sign up",
   "Current Password": "Current Password",
   "New Password": "New Password",
   "Confirm your new Password": "Confirm your new Password",
   "Change": "Change",
   "Welcome ": "Welcome ",
   "It takes 2 mn to measure your happiness,":
-      "It takes 2 mn to measure your happiness,",
-  "you can now access all Quiz": "You can now access to the Quiz",
+      "It takes 2 mn to measure the maturity of your happiness,",
+  "you can now access all Quiz": "You can now access to your Quiz",
   "Ready to boost your happiness ? here we are.":
-      "Ready to boost your happiness ?",
+       "Get ready to embark on a transformative Happiness experience!",
   "Start Your Quiz": "Start your Happiness Quiz",
   "Message": "Message",
   "Your password and confirmation password do not match":
@@ -73,7 +73,7 @@ Map<String, String> en = {
   "I am powerful": "I am Powerful",
   "I am Grateful": "I am Grateful",
   "I am focused on solutions": "I am solution oriented",
-  "I choose happiness": "I choose happiness",
+  "I choose happiness": "I choose happiness no matter what",
   "Settings": "Settings",
   "Languages": "Languages",
   "French": "French",
@@ -84,32 +84,32 @@ Map<String, String> en = {
   "not found": "Not found",
   "Choose your language": "Choose your language",
   "Do you know that a positive brain is 30% more productive ?":
-      "Do you know that a positive brain is 30% more productive?",
+     "Keep moving forward, a positive brain is 30% more productive?",
   "Happiness is the highest form of health":
       "Happiness is the highest form of health",
   "Happiness is determined more by one’s state of mind than by external events.":
-      "Happiness is determined more by one’s state of mind than by external events.",
+      "Happiness is your choice, it's determined more by your state of mind than by external events.",
   " is required.": " is required.",
   "Finish": "Finish",
   "Next Question": "Next Question",
   "Get Started": "Get Started",
   "Question": "Question",
   "Now you can discover your happiness report Awareness is half of the realisation":
-      "Now you can discover your happiness report. Awareness is half of the realisation",
+      "Discover your amazing Report. Awareness is half of the realisation",
   "watch the masterclass that matches your needs":
       "Play your matching masterclass",
-  "View Your Report": "View Your Report",
-  "Watch Masterclasses": "Play Masterclasses",
+  "View Your Report": "View your personalized Report",
+  "Watch Masterclasses": "Play your matching Masterclasses",
   "You have already passed the Quiz,stay tuned for a new one, see you soon":
-      "You have already passed the Quiz, you can measure your happiness next week and keep tracking your evolution",
+    "You have already passed the Quiz, keep on tracking your happiness evolution",
   "Browse and select from the happy  tools ":
-      "Browse and select from our positif tools",
+      "Awesome. Take the Quizz and mesure your Happiness",
   "badMoodText":
-      "It is ok to not to be OK \nYou can change your emotions in one second \nObserve without judgement \nRead our daily positif affirmations \nRemember nothing is fixed \nEvery issue has unlimited solutions.",
+      "It is ok to not to be OK \nYou can change your emotions in one second \nObserve without judgement \nRead our daily positif affirmations \nRemember, nothing is fixed \nEvery issue has unlimited solutions.",
   "neutralMoodText":
-      "You are in a neutral mode mood, you need inspiration \nUse our App boosters \nBe grateful for 3 things daily\nListen to a positive podcast in our videothek\nListen to our positif playlist music.",
+      "You are in a neutral mode mood, you need inspiration \nUse our App boosters \nBe grateful for 3 things daily\nListen to a positive podcast in our video section\nListen to our positif playlist music.",
   "happyMoodText":
-      "You have a good mood today, you will be very productive \nSpread happiness around you \nCompliment someone you care for\nList you wish/goals.",
+      "You are in a good mood today, you will be very productive \nSpread happiness around you \nCompliment someone you care for\nList your goals and take actions.",
   "Terms of uses": "Terms of uses",
   "Private Notice": "Private Notice",
   "Back": "Back"
