@@ -17,6 +17,8 @@ import 'dart:ui' as ui;
 import 'package:happy_nation/screens/user/mood_alert/parts/utils.dart';
 import 'package:happy_nation/repositories/mood_repository.dart' as mood_repo;
 
+import '../constants/assets/sound_asset.dart';
+import '../helpers/sound.dart';
 import 'storage_controller.dart';
 import 'user_controller.dart';
 
@@ -147,20 +149,24 @@ class MoodController extends GetxController {
             imgPath: MainAssets.unHappyMood,
             mood: 'Unhappy!',
             text: ConstantTexts.badMoodText);
+            SoundEffect.play(SoundAssets.baroSad);
         break;
       case 2:
         moodModel.value = Mood(
             imgPath: MainAssets.neutralMood,
             mood: 'Neutral!',
             text: ConstantTexts.neutralMoodText);
+            SoundEffect.play(SoundAssets.baroNeutre);
         break;
       case 3:
         moodModel.value = Mood(
             imgPath: MainAssets.happyMood,
             mood: 'Happy!',
             text: ConstantTexts.happyMoodText);
+            SoundEffect.play(SoundAssets.baroHappy);
         break;
       default:
+      // Handle the default case here
     }
   }
 }

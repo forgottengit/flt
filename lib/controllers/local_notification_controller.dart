@@ -27,10 +27,10 @@ class LocalNotificationController extends GetxController {
 
   initLocalNotif() {
     var androidInitilize =
-        const AndroidInitializationSettings('@mipmap/ic_launcher');
+    const AndroidInitializationSettings('@mipmap/ic_launcher');
 
     var initilizationsSettings =
-        InitializationSettings(android: androidInitilize);
+    InitializationSettings(android: androidInitilize);
     var fltrNotification = FlutterLocalNotificationsPlugin();
     fltrNotification.initialize(initilizationsSettings);
     tz.initializeTimeZones();
@@ -69,28 +69,28 @@ class LocalNotificationController extends GetxController {
     int days = 0;
     // initialise the plugin. app_icon needs to be a added as a drawable resource to the Android head project
     const AndroidInitializationSettings initializationSettingsAndroid =
-        AndroidInitializationSettings('@mipmap/ic_stat_vector');
+    AndroidInitializationSettings('@mipmap/ic_stat_vector');
     // const iOSinitilize = IOSInitializationSettings();
 
     const InitializationSettings initializationSettings =
-        InitializationSettings(android: initializationSettingsAndroid);
+    InitializationSettings(android: initializationSettingsAndroid);
     await flutterLocalNotificationsPlugin!.initialize(initializationSettings);
     // set notif in local
     for (var notification in notifications) {
       var times = notification.time!.split(':');
       var datetime =
-          convertTime(int.parse(times[0]), int.parse(times[1]), days: days++);
+      convertTime(int.parse(times[0]), int.parse(times[1]), days: days++);
 
       await flutterLocalNotificationsPlugin!.zonedSchedule(
         notification.id!,
         '',
-        notification.notification,
+        "HappyNation Boost", // Change the notification message here
         datetime,
         NotificationDetails(
           android: AndroidNotificationDetails(
             notification.id.toString(),
-            notification.notification ?? 'hpns',
-            channelDescription: notification.notification ?? 'hpns desc',
+            "HappyNation Boost", // Change the notification message here
+            channelDescription: "HappyNation Boost", // Change the notification description here
             color: orangeColor,
             largeIcon: const DrawableResourceAndroidBitmap('clock_notif'),
             importance: Importance.max,
@@ -100,7 +100,7 @@ class LocalNotificationController extends GetxController {
         ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime,
+        UILocalNotificationDateInterpretation.absoluteTime,
         matchDateTimeComponents: DateTimeComponents.dateAndTime,
       );
     }
@@ -126,7 +126,7 @@ class LocalNotificationController extends GetxController {
       var date = storageController.getData(key: 'next_notif_setup');
 
       DateTime tempDate =
-          DateFormat("yyyy-MM-dd hh:mm:ss").parse(jsonDecode(date));
+      DateFormat("yyyy-MM-dd hh:mm:ss").parse(jsonDecode(date));
       var isAfter = tempDate.isAfter(DateTime.now());
       if (!isAfter) {
         setNotifs();
@@ -142,7 +142,7 @@ class LocalNotificationController extends GetxController {
       lang: Get.find<LanguageController>().currentLanguage,
     );
     stream.listen(
-      (LocalNotification _notif) {
+          (LocalNotification _notif) {
         notifications.add(_notif);
       },
       onError: (a) {},
@@ -154,6 +154,7 @@ class LocalNotificationController extends GetxController {
 
   Future<void> checkPendingNotificationRequests() async {
     final List<PendingNotificationRequest> pendingNotificationRequests =
-        await flutterLocalNotificationsPlugin!.pendingNotificationRequests();
+    await flutterLocalNotificationsPlugin!.pendingNotificationRequests();
   }
 }
+

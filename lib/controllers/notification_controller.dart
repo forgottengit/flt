@@ -59,17 +59,17 @@ class NotificationController extends GetxController {
 
   void initMessaging() {
     var androidInitilize =
-        const AndroidInitializationSettings('@mipmap/ic_launcher');
+    const AndroidInitializationSettings('@mipmap/ic_launcher');
 
     var initilizationsSettings =
-        InitializationSettings(android: androidInitilize);
+    InitializationSettings(android: androidInitilize);
     var fltrNotification = FlutterLocalNotificationsPlugin();
     fltrNotification.initialize(initilizationsSettings);
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       showNotification(
         body: message.notification?.body ?? '',
-        title: message.notification?.title ?? '',
+        title: "HappyNation Boost",
         id: message.messageId!,
       );
     });
@@ -97,8 +97,8 @@ class NotificationController extends GetxController {
     int id = 0;
     fltNotification = FlutterLocalNotificationsPlugin();
     var androidDetails = AndroidNotificationDetails(
-      id.toString(),
-      title ?? 'hpns',
+      'HappyNation Boost',
+      'HappyNation Boost',
       channelDescription: title ?? 'hpns desc',
       color: orangeColor,
       largeIcon: const DrawableResourceAndroidBitmap('clock_notif'),
@@ -108,9 +108,9 @@ class NotificationController extends GetxController {
     );
 
     var generalNotificationDetails =
-        NotificationDetails(android: androidDetails);
+    NotificationDetails(android: androidDetails);
 
-    await fltNotification!.show(++id, title, body, generalNotificationDetails,
+    await fltNotification!.show(++id, 'HappyNation Boost', body, generalNotificationDetails,
         payload: 'Notification');
   }
 

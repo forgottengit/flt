@@ -50,7 +50,7 @@ class App extends StatelessWidget {
         translations: Translation(),
         locale: const Locale('fr'),
         fallbackLocale: const Locale('fr'),
-        title: "Happy nation",
+        title: "HappyNation Boost",
         theme: ThemeData(
           fontFamily: 'Product Sans',
         ),
