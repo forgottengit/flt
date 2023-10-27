@@ -83,7 +83,7 @@ class LocalNotificationController extends GetxController {
 
       await flutterLocalNotificationsPlugin!.zonedSchedule(
         notification.id!,
-        '',
+        'HappyNation Boost',
         "HappyNation Boost", // Change the notification message here
         datetime,
         NotificationDetails(
